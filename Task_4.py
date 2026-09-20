@@ -49,8 +49,7 @@ def change_contact(args, contacts):
 @input_error
 def show_phone(args, contacts):
     name = args[0]
-    if name in contacts:
-        return f"{name}'s phone number: {contacts[name]}"
+    return f"{name}'s phone number: {contacts[name]}"
 
 
 def show_all(contacts):
