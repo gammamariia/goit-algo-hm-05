@@ -38,12 +38,8 @@ def add_contact(args, contacts):
 @input_error
 def change_contact(args, contacts):
     name, phone = args
-    # if name in contacts:
     contacts[name] = phone
     return "Contact updated."
-    # raise KeyError
-    # contacts[name] = phone
-    # return "Contact updated."
 
 
 @input_error
