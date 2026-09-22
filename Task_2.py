@@ -5,7 +5,7 @@ text = "Загальний дохід працівника складаєтьс�
 
 
 def generator_numbers(text: str):
-    pattern = r"\b\d+(?:\.\d+)?\b"
+    pattern = r"(?:^|\s)\d+(?:\.\d+)?(?=\s|$)"
     for number in re.findall(pattern, text):
         yield float(number)
 
